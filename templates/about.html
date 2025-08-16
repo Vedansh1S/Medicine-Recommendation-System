@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Health Care Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                        radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+            background-blend-mode: multiply,multiply;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-section .lead {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .about-content {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .about-content h2 {
+            color: #ff6b6b;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .about-content .lead {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f8f9fa;
+        }
+
+        .impact-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .impact-card:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .impact-number {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .impact-card p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #fff;
+            margin: 0;
+        }
+
+        h2.text-center.mb-5 {
+            color: #ff6b6b;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .navbar-nav {
+            margin-left: 0;  /* Remove any left margin */
+        }
+
+        .ms-auto {
+            margin-left: 0 !important; /* Override Bootstrap's margin */
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin: 0 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Med Pal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">About Us</h1>
+            <p class="lead">Transforming Healthcare Through Innovation</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="about-content">
+            <h2 class="text-center mb-4">Who We Are</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="lead text-center">
+                        We are a dedicated team of healthcare professionals committed to revolutionizing 
+                        healthcare through innovative technology and compassionate service. Our mission 
+                        is to make quality healthcare accessible to everyone, everywhere.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-5">Our Impact</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="impact-card text-center">
+                    <div class="impact-number">50+</div>
+                    <p>Patients Served</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card text-center">
+                    <div class="impact-number">90%</div>
+                    <p>Patient Satisfaction</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card text-center">
+                    <div class="impact-number">24/7</div>
+                    <p>Healthcare Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - Med Pal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), 
+                        radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+            background-blend-mode: multiply,multiply;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            padding: 20px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            margin: 0 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(45deg, #ff6b6b, #ffb347);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .blog-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-title {
+            color: #ff6b6b;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .blog-meta {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            color: #f8f9fa;
+            line-height: 1.8;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            color: black;
+            margin-top: 0;
+            margin-left: 2px;
+            animation: pulse 2s infinite;
+        }
+
+        .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Med Pal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="slide-top">
+    </header>
+    <main class="fade-in delay-1">
+    <div class="container py-5">
+        <h1 class="text-center mb-5" style="font-weight: 700; color: #ff6b6b; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+            Health & Wellness Blog
+        </h1>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1" class="blog-image" alt="Mental Health">
+            <h2 class="blog-title">Understanding Mental Health in the Digital Age</h2>
+            <div class="blog-meta">
+                <i class="fas fa-calendar-alt"></i> October 15, 2023
+                <i class="fas fa-user ms-3"></i> Dr. Sarah Johnson
+            </div>
+            <div class="blog-content">
+                <p>Mental health has become increasingly important in our digital world. The constant connectivity, social media pressure, and information overload can significantly impact our psychological well-being. Here are key strategies for maintaining mental health:</p>
+                <ul>
+                    <li>Practice digital detox regularly</li>
+                    <li>Maintain a balance between online and offline activities</li>
+                    <li>Seek professional help when needed</li>
+                    <li>Build strong support networks</li>
+                </ul>
+                <p>Remember, taking care of your mental health is just as important as physical health. Regular check-ups, open conversations, and proper self-care routines can make a significant difference in your overall well-being.</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-1.2.1" class="blog-image" alt="Healthy Lifestyle">
+            <h2 class="blog-title">The Impact of Lifestyle Choices on Long-term Health</h2>
+            <div class="blog-meta">
+                <i class="fas fa-calendar-alt"></i> October 12, 2023
+                <i class="fas fa-user ms-3"></i> Dr. Michael Chen
+            </div>
+            <div class="blog-content">
+                <p>Your daily lifestyle choices significantly impact your long-term health outcomes. From diet to exercise, sleep patterns to stress management, every decision matters. Here's a comprehensive look at key lifestyle factors:</p>
+                <p>Regular exercise not only improves physical fitness but also enhances mental clarity, reduces stress, and boosts immune function. A balanced diet rich in whole foods provides essential nutrients for optimal health. Adequate sleep is crucial for recovery and maintaining overall well-being.</p>
+                <p>Research shows that consistent healthy lifestyle choices can add up to 10 years to your life expectancy. Making small, sustainable changes today can lead to significant health benefits in the future.</p>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1" class="blog-image" alt="Technology in Healthcare">
+            <h2 class="blog-title">The Future of Healthcare Technology</h2>
+            <div class="blog-meta">
+                <i class="fas fa-calendar-alt"></i> October 10, 2023
+                <i class="fas fa-user ms-3"></i> Dr. Emily Williams
+            </div>
+            <div class="blog-content">
+                <p>Healthcare technology is evolving at an unprecedented pace, transforming how we diagnose, treat, and manage health conditions. From AI-powered diagnostics to telemedicine, these innovations are making healthcare more accessible and efficient.</p>
+                <p>Recent developments include:</p>
+                <ul>
+                    <li>AI-powered diagnostic tools with increased accuracy</li>
+                    <li>Remote patient monitoring systems</li>
+                    <li>Virtual reality in medical training</li>
+                    <li>Personalized medicine based on genetic profiles</li>
+                </ul>
+                <p>These advancements are not just improving treatment outcomes but also making healthcare more personalized and preventive-focused.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
